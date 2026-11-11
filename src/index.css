@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #350B18;
+    color: #FFF8E9;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    user-select: text;
+  }
+
+  /* Custom gold scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1f050e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #D4AF65 0%, #641B2B 100%);
+    border-radius: 4px;
+    border: 1px solid rgba(212, 175, 101, 0.3);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D4AF65;
+  }
+}
+
+/* Glassmorphism with gold border */
+.glass-royal {
+  background: rgba(64, 15, 30, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 101, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(15, 2, 6, 0.6), inset 0 1px 1px rgba(255, 230, 180, 0.2);
+}
+
+.glass-royal-card {
+  background: linear-gradient(135deg, rgba(85, 20, 38, 0.55) 0%, rgba(40, 7, 18, 0.75) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 101, 0.35);
+  box-shadow: 0 20px 50px rgba(10, 1, 4, 0.75), inset 0 1px 2px rgba(255, 230, 180, 0.3);
+}
+
+.glass-gold-subtle {
+  background: rgba(212, 175, 101, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 101, 0.2);
+}
+
+/* Gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF6D8 0%, #F5E6C8 25%, #E8C170 50%, #D4AF65 75%, #F0D99D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-gold-bright {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFE9A8 30%, #E8B923 70%, #FFF1C5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Ornamental border corners */
+.ornate-border {
+  position: relative;
+  border: 1px solid rgba(212, 175, 101, 0.4);
+}
+
+.ornate-border::before,
+.ornate-border::after {
+  content: "✦";
+  position: absolute;
+  color: #D4AF65;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.ornate-border::before {
+  top: -7px;
+  left: -7px;
+}
+
+.ornate-border::after {
+  bottom: -7px;
+  right: -7px;
+}
+
+/* Radial light glow utility */
+.radial-glow-gold {
+  background: radial-gradient(circle, rgba(212, 175, 101, 0.18) 0%, rgba(212, 175, 101, 0) 70%);
+}
+
+.radial-glow-maroon {
+  background: radial-gradient(circle, rgba(100, 27, 43, 0.4) 0%, rgba(53, 11, 24, 0) 70%);
+}
+
+/* Diya Flame flicker */
+@keyframes flameFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 15px #FFB830) drop-shadow(0 0 25px #FF5E00);
+  }
+  25% {
+    transform: scale(1.06, 1.12) rotate(1deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 20px #FFC845) drop-shadow(0 0 35px #FF7700);
+  }
+  50% {
+    transform: scale(0.96, 0.98) rotate(-0.5deg);
+    opacity: 0.9;
+    filter: drop-shadow(0 0 12px #FFA820) drop-shadow(0 0 20px #E65000);
+  }
+  75% {
+    transform: scale(1.08, 1.05) rotate(0.8deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 22px #FFD15C) drop-shadow(0 0 38px #FF6A00);
+  }
+}
+
+.flame-animation {
+  animation: flameFlicker 1.8s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Gold button shimmer */
+.gold-btn-shimmer {
+  background: linear-gradient(90deg, #b8860b 0%, #D4AF65 25%, #FFF1C5 50%, #D4AF65 75%, #b8860b 100%);
+  background-size: 200% auto;
+  transition: all 0.5s ease;
+}
+
+.gold-btn-shimmer:hover {
+  background-position: right center;
+  box-shadow: 0 0 25px rgba(212, 175, 101, 0.6);
+}
+
+/* Subtle background vignette */
+.vignette-overlay {
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 40%, rgba(15, 2, 7, 0.65) 100%);
+}
+
