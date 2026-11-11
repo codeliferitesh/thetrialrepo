@@ -65,7 +65,7 @@ const PROMISES = [
     sanskrit: 'शाश्वत स्नेह',
     icon: Heart,
     short: 'An eternal brother-sister bond',
-    vow: 'Boyfriends, jobs, cities, and seasons of life will come and go, but the bond we share is written in stone. I promise to love you, respect you, and cherish you as my sister until the end of time.',
+    vow: 'Time, distances, busy schedules, and seasons of life will come and go, but the bond we share is etched in stone. I promise to always stand by your side, support your dreams, and cherish you as my sister forever.',
     color: 'from-red-500/20 to-maroon-900/60',
     accent: '#FFF6D8',
   },
