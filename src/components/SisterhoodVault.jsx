@@ -41,16 +41,6 @@ const PROMISES = [
   },
   {
     id: 3,
-    title: 'The Partner in Crime',
-    sanskrit: 'सखा सदैव',
-    icon: Smile,
-    short: 'Countless laughs & silly moments',
-    vow: 'I promise to never stop teasing you, never stop stealing the last piece of chocolate (okay, maybe half!), and always keep our goofy childhood jokes alive. You will always be my favorite mischief partner.',
-    color: 'from-gold-500/20 to-maroon-900/60',
-    accent: '#FFDF73',
-  },
-  {
-    id: 4,
     title: 'The Midnight Confidante',
     sanskrit: 'हृदय संवाद',
     icon: Compass,
@@ -60,7 +50,7 @@ const PROMISES = [
     accent: '#D99BA8',
   },
   {
-    id: 5,
+    id: 4,
     title: 'Forever Best Friends',
     sanskrit: 'शाश्वत स्नेह',
     icon: Heart,
@@ -172,7 +162,7 @@ export function SisterhoodVault() {
                 : 'glass-royal text-ivory/80 hover:text-gold-light border border-gold-400/20'
             }`}
           >
-            ✦ 5 Sacred Vows
+            ✦ Sacred Vows
           </button>
 
           <button
